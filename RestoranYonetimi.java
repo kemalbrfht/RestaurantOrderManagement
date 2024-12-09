@@ -12,22 +12,8 @@ public class RestoranYonetimi {
         }
     }
 
-    public void masalariListele() {
-        for (Masa masa : masalar) {
-            System.out.println("Masa " + masa.getMasaNo() + ": " + (masa.isDolu() ? "Dolu" : "Boş"));
-        }
-    }
-
-    public Masa masaGetir(int masaNo) {
-        if (masaNo < 1 || masaNo > 20) {
-            System.out.println("Geçersiz masa numarası!");
-            return null;
-        }
-        return masalar.get(masaNo - 1);
-    }
-
-    public void siparisVer(Masa masa, String kategori, String urun, double fiyat) {
-        masa.getSiparisler().add(new Siparis(kategori, urun, fiyat));
-        System.out.println(urun + " sipariş edildi.");
+    // Masaların listesini döndürür
+    public List<Masa> getMasalar() {
+        return masalar;
     }
 }
