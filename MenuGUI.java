@@ -1,13 +1,13 @@
 
-import javax.swing.*;
 import java.awt.*;
 import java.util.Map;
+import javax.swing.*;
 
 public class MenuGUI {
     public MenuGUI(JFrame frame, Menu menu) {
         JPanel panelMenu = new JPanel(new GridLayout(4, 1, 10, 10));
 
-        JButton btnAnaYemek = new JButton("Ana Yemekler");
+        JButton btnAnaYemek = new JButton("Anaaa Yemekler");
         JButton btnIcecek = new JButton("İçecekler");
         JButton btnTatli = new JButton("Tatlılar");
         JButton btnBack = new JButton("Ana Menüye Dön");
