@@ -31,7 +31,7 @@ public class MasalarGUI {
             panelMasalar.add(btnMasa);
         }
 
-        JButton btnBack = new JButton("Ana Menüye Dön");
+        JButton btnBack = new JButton("Ana Menüye Dön31");
         btnBack.addActionListener(e -> new RestoranOtomasyonuGUI().initMainMenu());
         panelMasalar.add(btnBack);
 
